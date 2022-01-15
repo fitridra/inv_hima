@@ -135,7 +135,7 @@ public class form_barangU extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
       DefaultTableModel tabel = new DefaultTableModel(); 
@@ -159,14 +159,14 @@ public class form_barangU extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(null, e);
         }
-    }//GEN-LAST:event_cariActionPerformed
+    }
 
-    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
+    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {
         new pilihanlogin().setVisible(true);
         dispose();
-    }//GEN-LAST:event_kembaliActionPerformed
+    }
 
-    private void cetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cetakActionPerformed
+    private void cetakActionPerformed(java.awt.event.ActionEvent evt) {
         MessageFormat atas = new MessageFormat("DATA INVENTARIS HIMATIF");
         MessageFormat bawah = new MessageFormat("TAHUN 2018/2019");
         try{
@@ -177,16 +177,12 @@ public class form_barangU extends javax.swing.JFrame {
         catch(PrinterException ex) {
             Logger.getLogger(form_barangU.class.getName()).log(Level.SEVERE, null,ex);
         }
-    }//GEN-LAST:event_cetakActionPerformed
+    }
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
        new form_brU().setVisible(true);
         dispose(); 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
     /**
      * @param args the command line arguments
