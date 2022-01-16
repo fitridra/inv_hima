@@ -36,7 +36,7 @@ public class form_barangU extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36));
         jLabel1.setText("Form Inventaris Himatif");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, -1, -1));
 
@@ -48,7 +48,7 @@ public class form_barangU extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 60, 149, 30));
 
         kembali.setBackground(new java.awt.Color(5, 14, 24));
-        kembali.setFont(new java.awt.Font("Aharoni", 0, 15)); // NOI18N
+        kembali.setFont(new java.awt.Font("Aharoni", 0, 15));
         kembali.setForeground(new java.awt.Color(255, 255, 255));
         kembali.setText("Keluar");
         kembali.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +59,7 @@ public class form_barangU extends javax.swing.JFrame {
         getContentPane().add(kembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         cetak.setBackground(new java.awt.Color(5, 14, 24));
-        cetak.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
+        cetak.setFont(new java.awt.Font("Aharoni", 0, 18));
         cetak.setForeground(new java.awt.Color(255, 255, 255));
         cetak.setText("Print");
         cetak.addActionListener(new java.awt.event.ActionListener() {
@@ -70,7 +70,7 @@ public class form_barangU extends javax.swing.JFrame {
         getContentPane().add(cetak, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, 30));
 
         cari.setBackground(new java.awt.Color(5, 14, 24));
-        cari.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
+        cari.setFont(new java.awt.Font("Aharoni", 0, 18));
         cari.setForeground(new java.awt.Color(255, 255, 255));
         cari.setText("Cari");
         cari.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +121,7 @@ public class form_barangU extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 570, 360));
 
         jButton1.setBackground(new java.awt.Color(5, 14, 24));
-        jButton1.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Aharoni", 0, 18));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Info Barang Rusak");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -131,13 +131,13 @@ public class form_barangU extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, -1, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/4trd.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/4trd.jpg")));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, -1));
 
         pack();
     }
 
-    private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
+    private void cariActionPerformed(java.awt.event.ActionEvent evt) {
       DefaultTableModel tabel = new DefaultTableModel(); 
       tabel.addColumn("No Barang");
       tabel.addColumn("Nama Barang");
@@ -184,15 +184,7 @@ public class form_barangU extends javax.swing.JFrame {
         dispose(); 
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -203,17 +195,12 @@ public class form_barangU extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(form_barangU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new form_barangU().setVisible(true);
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cari;
     private javax.swing.JButton cetak;
     private javax.swing.JButton jButton1;
@@ -223,7 +210,6 @@ public class form_barangU extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton kembali;
-    // End of variables declaration//GEN-END:variables
 
  private void tampilkantabel(){
         // membuat tampilan model tabel
