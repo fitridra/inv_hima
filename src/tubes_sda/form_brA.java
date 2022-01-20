@@ -51,7 +51,7 @@ public class form_brA extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24));
         jLabel1.setText("Informasi Barang Rusak");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 0, -1, -1));
 
