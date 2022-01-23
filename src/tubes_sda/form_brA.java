@@ -65,23 +65,23 @@ public class form_brA extends javax.swing.JFrame {
         });
         getContentPane().add(Keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11));
         jLabel2.setText("No Barang");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 49, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); 
         jLabel3.setText("Nama Barang");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 75, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); 
         jLabel4.setText("Jumlah Barang");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 101, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); 
         jLabel5.setText("Terbilang");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 127, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); 
         jLabel6.setText("Keterangan");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 153, -1, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 46, 140, -1));
@@ -185,7 +185,7 @@ public class form_brA extends javax.swing.JFrame {
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
     
     private void kosongkan(){
         jTextField1.setText(null);
@@ -216,7 +216,7 @@ public class form_brA extends javax.swing.JFrame {
         }
     }
     
-    private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
+    private void cariActionPerformed(java.awt.event.ActionEvent evt) {
         //tombol cari
       DefaultTableModel tabel = new DefaultTableModel(); 
       tabel.addColumn("No Barang");
@@ -239,9 +239,9 @@ public class form_brA extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(null, e);
         }
-    }//GEN-LAST:event_cariActionPerformed
+    }
 
-    private void tambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahActionPerformed
+    private void tambahActionPerformed(java.awt.event.ActionEvent evt) {
         //tombol tambah
         try {
             String sql = "INSERT INTO form_br VALUES ('"+jTextField1.getText()+"','"
@@ -255,9 +255,9 @@ public class form_brA extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage());
         }
     tampilkantabel();
-    }//GEN-LAST:event_tambahActionPerformed
+    }
 
-    private void hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusActionPerformed
+    private void hapusActionPerformed(java.awt.event.ActionEvent evt) {
       //tombol delete
         try {
             String sql ="DELETE FROM `form_br` WHERE `no`="+jTextField1.getText();
@@ -266,9 +266,9 @@ public class form_brA extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(from_barangA.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_hapusActionPerformed
+    }
 
-    private void EditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditActionPerformed
+    private void EditActionPerformed(java.awt.event.ActionEvent evt) {
        //tombol edit
         try {
             String sql ="UPDATE `form_br` SET `nama`='"+jTextField2.getText()+"',`jumlah`='"
@@ -283,9 +283,9 @@ public class form_brA extends javax.swing.JFrame {
         }
         tampilkantabel();
         kosongkan();
-    }//GEN-LAST:event_EditActionPerformed
+    }
 
-    private void printActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printActionPerformed
+    private void printActionPerformed(java.awt.event.ActionEvent evt) {
         //print
         MessageFormat atas = new MessageFormat("INFORMASI BARANG RUSAK HIMATIF");
         MessageFormat bawah = new MessageFormat("TAHUN 2018/2019");
@@ -297,23 +297,23 @@ public class form_brA extends javax.swing.JFrame {
         catch(PrinterException ex) {
             Logger.getLogger(form_brA.class.getName()).log(Level.SEVERE, null,ex);
         }
-    }//GEN-LAST:event_printActionPerformed
+    }
 
-    private void refreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshActionPerformed
+    private void refreshActionPerformed(java.awt.event.ActionEvent evt) {
         kosongkan();
-    }//GEN-LAST:event_refreshActionPerformed
+    }
 
-    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
+    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {
         new from_barangA().setVisible(true);
         dispose();
-    }//GEN-LAST:event_kembaliActionPerformed
+    }
 
-    private void KeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KeluarActionPerformed
+    private void KeluarActionPerformed(java.awt.event.ActionEvent evt) {
        new pilihanlogin().setVisible(true);
         dispose();
-    }//GEN-LAST:event_KeluarActionPerformed
+    }
 
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {
        //tabel
         int baris = jTable1.rowAtPoint(evt.getPoint());
         String no =jTable1.getValueAt(baris, 0).toString();
@@ -326,7 +326,7 @@ public class form_brA extends javax.swing.JFrame {
         jTextField4.setText(terb);
         String ket = jTable1.getValueAt(baris, 4).toString();
         jTextField5.setText(ket);
-    }//GEN-LAST:event_jTable1MouseClicked
+    }
     
     
     public static void main(String args[]) {
@@ -347,7 +347,7 @@ public class form_brA extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    
     private javax.swing.JButton Edit;
     private javax.swing.JButton Keluar;
     private javax.swing.JButton cari;
@@ -371,7 +371,6 @@ public class form_brA extends javax.swing.JFrame {
     private javax.swing.JButton print;
     private javax.swing.JButton refresh;
     private javax.swing.JButton tambah;
-    // End of variables declaration//GEN-END:variables
 
 private void tampilkantabel(){
         // membuat tampilan model tabel
