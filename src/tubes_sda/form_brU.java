@@ -11,10 +11,7 @@ import javax.swing.JTable;
 
 public class form_brU extends javax.swing.JFrame {
 
-    /**
-     * Creates new form form_br
-     */
-    public form_brU() {
+public form_brU() {
         initComponents();
         tampilkantabel();
         this.setLocationRelativeTo(null);
