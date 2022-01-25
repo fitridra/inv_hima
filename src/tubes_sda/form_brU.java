@@ -99,23 +99,23 @@ public form_brU() {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 123, 589, 370));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/4trd.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/4trd.jpg")));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
+    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {
         new form_barangU().setVisible(true);
         dispose();
-    }//GEN-LAST:event_kembaliActionPerformed
+    }
 
-    private void keluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarActionPerformed
+    private void keluarActionPerformed(java.awt.event.ActionEvent evt) {
         new pilihanlogin().setVisible(true);
         dispose();
-    }//GEN-LAST:event_keluarActionPerformed
+    }
 
-    private void printActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printActionPerformed
+    private void printActionPerformed(java.awt.event.ActionEvent evt) {
         MessageFormat atas = new MessageFormat("INFORMASI BARANG RUSAK HIMATIF");
         MessageFormat bawah = new MessageFormat("TAHUN 2018/2019");
         try{
@@ -126,9 +126,9 @@ public form_brU() {
         catch(PrinterException ex) {
             Logger.getLogger(form_brU.class.getName()).log(Level.SEVERE, null,ex);
         }
-    }//GEN-LAST:event_printActionPerformed
+    }
 
-    private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
+    private void cariActionPerformed(java.awt.event.ActionEvent evt) {
         DefaultTableModel tabel = new DefaultTableModel(); 
       tabel.addColumn("No Barang");
       tabel.addColumn("Nama Barang");
@@ -150,17 +150,10 @@ public form_brU() {
         {
             JOptionPane.showMessageDialog(null, e);
         }
-    }//GEN-LAST:event_cariActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+    }
+        
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+       
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -171,17 +164,12 @@ public form_brU() {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(form_brU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new form_brU().setVisible(true);
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cari;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -191,8 +179,8 @@ public form_brU() {
     private javax.swing.JButton keluar;
     private javax.swing.JButton kembali;
     private javax.swing.JButton print;
-    // End of variables declaration//GEN-END:variables
-private void tampilkantabel(){
+
+        private void tampilkantabel(){
         // membuat tampilan model tabel
         DefaultTableModel tabel = new DefaultTableModel();
         tabel.addColumn("No Barang");
