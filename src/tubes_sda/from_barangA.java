@@ -13,10 +13,7 @@ import javax.swing.table.DefaultTableModel;
 import static tubes_sda.conn.getConnection;
 
 public class from_barangA extends javax.swing.JFrame {
-
-    /**
-     * Creates new form from_barangA
-     */
+    
     public from_barangA() {
         initComponents();
         kosongkan();
