@@ -53,23 +53,23 @@ public class from_barangA extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24));
         jLabel1.setText("Form Inventaris Himatif");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 10));
         jLabel2.setText("No Barang ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial Black", 0, 10));
         jLabel3.setText("Nama Barang");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 76, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial Black", 0, 10));
         jLabel4.setText("Jumlah Barang");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial Black", 0, 10));
         jLabel5.setText("Terbilang");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 128, -1, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 48, 141, -1));
@@ -186,7 +186,7 @@ public class from_barangA extends javax.swing.JFrame {
         });
         getContentPane().add(Print, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial Black", 0, 10));
         jLabel6.setText("Keterangan");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 154, -1, -1));
 
@@ -217,11 +217,11 @@ public class from_barangA extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/4trd.jpg"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/4trd.jpg")));
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void kosongkan(){
         jTextField1.setText(null);
