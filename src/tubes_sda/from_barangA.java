@@ -252,7 +252,7 @@ public class from_barangA extends javax.swing.JFrame {
         }
     }
     
-    private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
+    private void cariActionPerformed(java.awt.event.ActionEvent evt) {
       //tombol cari
       DefaultTableModel tabel = new DefaultTableModel(); 
       tabel.addColumn("No Barang");
@@ -275,9 +275,9 @@ public class from_barangA extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(null, e);
         }
-    }//GEN-LAST:event_cariActionPerformed
+    }
 
-    private void tambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahActionPerformed
+    private void tambahActionPerformed(java.awt.event.ActionEvent evt) {
         //tombol tambah
         try {
             String sql = "INSERT INTO form_barang VALUES ('"+jTextField1.getText()+"','"
@@ -291,9 +291,9 @@ public class from_barangA extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage());
         }
     tampilkantabel();
-    }//GEN-LAST:event_tambahActionPerformed
+    }
 
-    private void hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusActionPerformed
+    private void hapusActionPerformed(java.awt.event.ActionEvent evt) {
         //tombol delete
         try {
             String sql ="DELETE FROM `form_barang` WHERE `no`="+jTextField1.getText();
@@ -302,15 +302,15 @@ public class from_barangA extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(from_barangA.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_hapusActionPerformed
+    }
 
-    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
+    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {
     //tombol keluar
         new pilihanlogin().setVisible(true);
         dispose();
-    }//GEN-LAST:event_kembaliActionPerformed
+    }
 
-    private void editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editActionPerformed
+    private void editActionPerformed(java.awt.event.ActionEvent evt) {
      //tombol edit
         try {
             String sql ="UPDATE `form_barang` SET `nama`='"+jTextField2.getText()+"',`jumlah`='"
@@ -325,7 +325,7 @@ public class from_barangA extends javax.swing.JFrame {
         }
         tampilkantabel();
         kosongkan();
-    }//GEN-LAST:event_editActionPerformed
+    }
 
     private void PrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrintActionPerformed
      //print
