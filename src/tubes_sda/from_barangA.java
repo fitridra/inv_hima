@@ -327,7 +327,7 @@ public class from_barangA extends javax.swing.JFrame {
         kosongkan();
     }
 
-    private void PrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrintActionPerformed
+    private void PrintActionPerformed(java.awt.event.ActionEvent evt) {
      //print
         MessageFormat atas = new MessageFormat("DAFTAR INVENTARIS HIMATIF");
         MessageFormat bawah = new MessageFormat("TAHUN 2018/2019");
@@ -339,13 +339,9 @@ public class from_barangA extends javax.swing.JFrame {
         catch(PrinterException ex) {
             Logger.getLogger(from_barangA.class.getName()).log(Level.SEVERE, null,ex);
         }
-    }//GEN-LAST:event_PrintActionPerformed
+    }
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
-
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {
         //tabel
         int baris = jTable1.rowAtPoint(evt.getPoint());
         String no =jTable1.getValueAt(baris, 0).toString();
@@ -358,35 +354,18 @@ public class from_barangA extends javax.swing.JFrame {
         jTextField4.setText(terb);
         String ket = jTable1.getValueAt(baris, 4).toString();
         jTextField6.setText(ket);
-    }//GEN-LAST:event_jTable1MouseClicked
+    }
 
-    private void jTable1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jTable1AncestorAdded
-
-    }//GEN-LAST:event_jTable1AncestorAdded
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
-
-    private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
+    private void resetActionPerformed(java.awt.event.ActionEvent evt) {
         kosongkan();
-    }//GEN-LAST:event_resetActionPerformed
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
     new form_brA().setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-         
-    /**
-     * @param args the command line arguments
-     * @throws java.lang.Exception
-     */
+    }
+    
     public static void main(String args[]) throws Exception{
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -397,17 +376,12 @@ public class from_barangA extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(from_barangA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new from_barangA().setVisible(true);
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Print;
     private javax.swing.JButton cari;
     private javax.swing.JButton edit;
@@ -431,7 +405,6 @@ public class from_barangA extends javax.swing.JFrame {
     private javax.swing.JButton kembali;
     private javax.swing.JButton reset;
     private javax.swing.JButton tambah;
-    // End of variables declaration//GEN-END:variables
 
 private void tampilkantabel(){
         // membuat tampilan model tabel
