@@ -2,9 +2,6 @@ package tubes_sda;
 
 public class pilihanlogin extends javax.swing.JFrame {
 
-    /**
-     * Creates new form pilihanlogin
-     */
     public pilihanlogin() {
         initComponents();
         this.setLocationRelativeTo(null);
