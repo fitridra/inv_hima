@@ -21,7 +21,7 @@ public class pilihanlogin extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(5, 14, 24));
-        jButton1.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Aharoni", 0, 18));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Admin");
         jButton1.setPreferredSize(new java.awt.Dimension(61, 24));
