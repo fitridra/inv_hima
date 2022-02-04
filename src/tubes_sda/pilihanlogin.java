@@ -33,7 +33,7 @@ public class pilihanlogin extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 130, 60));
 
         jButton2.setBackground(new java.awt.Color(5, 14, 24));
-        jButton2.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Aharoni", 0, 18));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("User");
         jButton2.setMaximumSize(new java.awt.Dimension(61, 24));
@@ -46,12 +46,12 @@ public class pilihanlogin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 130, 60));
 
-        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 60)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 60));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PILIHAN LOGIN");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 420, 70));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/bfheabkf.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/bfheabkf.jpg")));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
