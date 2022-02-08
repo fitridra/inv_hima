@@ -63,7 +63,7 @@ public class pilihanlogin extends javax.swing.JFrame {
         dispose();
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         //tombol user
         new form_barangU().setVisible(true);
         dispose();
