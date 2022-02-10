@@ -67,7 +67,7 @@ public class pilihanlogin extends javax.swing.JFrame {
         //tombol user
         new form_barangU().setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
