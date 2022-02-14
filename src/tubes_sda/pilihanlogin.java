@@ -86,8 +86,6 @@ public class pilihanlogin extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(pilihanlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         
-        //</editor-fold>
-
         java.awt.EventQueue.invokeLater(() -> {
             new pilihanlogin().setVisible(true);
         });
