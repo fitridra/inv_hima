@@ -4,6 +4,7 @@ import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+//Koneksi Database
 public class conn{
     private Connection conn;
     public static Connection getConnection()throws SQLException{
